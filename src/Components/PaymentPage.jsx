@@ -11,17 +11,17 @@ function PaymentPage() {
     return (
         <div className='my-3 '>
             <div>
-                <div className='mx-10 mb-3 flex items-center justify-between'>
+                <div className='flex items-center justify-between mx-10 mb-3'>
                     <div className='flex gap-4'>
-                        <p className='text-base'>Payments</p>
-                        <div className='flex items-center gap-2 text-sm text-gray-600 justify-center'>
+                        <p className='text-[15px]'>Payments</p>
+                        <div className='flex items-center justify-center gap-[6px] text-[12px] text-[#4D4D4D]'>
                             <div><RxQuestionMarkCircled /></div>
                             <p>How it works</p>
                         </div>
                     </div>
-                    <div className='flex text-gray-500'>
-                        <div className='relative left-8 top-2'><FiSearch size={20}/></div>
-                        <input type="text" placeholder='Search features, tutorials, etc.' className='pl-10 pr-5 py-2 bg-[#f2f2f2] w-96 outline-none rounded placeholder:text-gray-500'/>
+                    <div className='flex text-[#808080]'>
+                        <div className='relative left-8 top-[10px]'><FiSearch size={20}/></div>
+                        <input type="text" placeholder='Search features, tutorials, etc.' className='pl-10 pr-5 py-2 bg-[#f2f2f2] w-[400px] outline-none rounded-md placeholder:text-gray-500 placeholder:text-[15px]'/>
                     </div>
                     <div className='flex gap-3 text-[#4c4c4c]'>
                         <div className='p-2 bg-[#e6e6e6] rounded-full'><RiMessage2Fill size={25}/></div>
@@ -35,7 +35,7 @@ function PaymentPage() {
                     <div className='flex justify-between my-8'>
                         <div className='text-xl font-medium'>Overview</div>
                         <div className='flex items-center gap-2 text-gray-600'>
-                            <button className='border-2 pl-3 pr-10 py-1 rounded text-base'>Last Month</button>
+                            <button className='py-1 pl-3 pr-10 text-base border-2 rounded'>Last Month</button>
                             <div className='relative right-9'><FaChevronDown /></div>
                         </div>
                     </div>

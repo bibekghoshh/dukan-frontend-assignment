@@ -15,21 +15,21 @@ const SideBar = () => {
   return (
     <div className="bg-[#1e2640] w-56  min-h-full flex justify-between flex-col">
       <div>
-        <div className="flex mx-4 pt-3 mb-5 justify-between text-white items-center">
+        <div className="flex items-center justify-between pt-3 mx-4 mb-5 text-white">
           <div className="flex items-center gap-3">
             <div>
-              <img className="w-11 rounded-md" src={logo} alt="" />
+              <img className="rounded-md w-11" src={logo} alt="" />
             </div>
             <div>
-              <p className="text-lg text-gray-100">Nishyan</p>
-              <p className="underline-offset-4 underline text-gray-300 text-sm">Visit store</p>
+              <p className="text-[15px] text-gray-100">Nishyan</p>
+              <p className="text-[13px] text-gray-300 underline underline-offset-4">Visit store</p>
             </div>
           </div>
           <div>
             <FaChevronDown />
           </div>
         </div>
-        <div className="flex flex-col text-slate-300 gap-5 ml-5">
+        <div className="flex flex-col gap-5 ml-5 text-slate-300 text-[15px] ">
           <div className="flex items-center gap-2">
             <div>
               <GoHome />
@@ -112,7 +112,7 @@ const SideBar = () => {
             <CiWallet className="text-white" size={30} />
           </div>
           <div className="py-[6px]">
-            <p className="text-xs text-slate-300">Available credits</p>
+            <p className="text-[13px] text-slate-300">Available credits</p>
             <p className="text-white">222.10</p>
           </div>
         </div>

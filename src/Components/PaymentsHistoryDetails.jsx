@@ -14,22 +14,22 @@ const PaymentsHistoryDetails = () => {
       <div className="mb-10">
         <p className="text-[20px] font-medium">Transactions | This Month</p>
       </div>
-      <div className=" custom-shadow mb-10">
-        <div className="flex justify-between items-center">
+      <div className="mb-10 custom-shadow">
+        <div className="flex items-center justify-between">
           <div className="flex text-gray-500">
             <div className='relative left-8 top-3'>
               <FiSearch size={18}/>
             </div>
-            <input type="text" placeholder="Search by order ID..." className='pl-10 pr-5 py-2  outline-none border-2 rounded placeholder:text-gray-500'/>
+            <input type="text" placeholder="Search by order ID..." className='py-2 pl-10 pr-5 border-2 rounded outline-none placeholder:text-gray-500'/>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex items-center">
-              <button className="border-2 pl-3 pr-10 py-1 rounded text-base">Sort</button>
+              <button className="py-1 pl-3 pr-10 text-base border-2 rounded">Sort</button>
               <div className="relative right-8">
                 <BsArrowDownUp size={12}/>
               </div>
             </div>
-            <div className="border-2 py-1 px-1 rounded">
+            <div className="px-1 py-1 border-2 rounded">
               <PiDownloadSimple size={25}/>
             </div>
           </div>
@@ -51,12 +51,12 @@ const PaymentsHistoryDetails = () => {
             {transactions.map((item,index)=>(<TransactionDetails key={index} item={item}/>))}
           </div>
           {/* 1-10 boxes */}
-          <div className="flex items-center justify-center gap-5 mt-8 pb-6">
+          <div className="flex items-center justify-center gap-5 pb-6 mt-8 text-[14px]">
             <div className="flex items-center">
-                <div><FaChevronLeft size={14}/></div>
-                <button className='border-2 pl-3 pr-10 py-1 rounded text-base'>Previous</button>
+                <div className="relative left-8"><FaChevronLeft size={14}/></div>
+                <button className='py-1 pl-10 pr-3 text-base border-2 rounded'>Previous</button>
             </div>
-            <div className="flex gap-4 items-center">
+            <div className="flex items-center gap-4 ">
                 <p>1</p>
                 <p>...</p>
                 <p className="bg-[#146eb4] text-white rounded px-[6px] py-[2px]">10</p>
@@ -70,7 +70,7 @@ const PaymentsHistoryDetails = () => {
                 <p>18</p>
             </div>
             <div className="flex items-center">
-                <button className='border-2 pl-3 pr-10 py-1 rounded text-base'>Next</button>
+                <button className='py-1 pl-3 pr-10 text-base border-2 rounded'>Next</button>
                 <div className="relative right-8"><FaChevronRight size={14}/></div>
             </div>
           </div>
